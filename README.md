@@ -15,4 +15,4 @@ An interactive expense tracker web application built using HTML, CSS, and JavaSc
 - Browser LocalStorage
 
 >> Live Demo
- https://your-username.github.io/smart-expense-tracker/
+ https://aanya2906.github.io/smart-expense-tracker/
