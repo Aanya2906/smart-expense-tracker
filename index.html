@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>💰 Smart Expense Tracker</h1>
+
+    <div id="add-expense" class="card">
+        <h2>Add Expense</h2>
+        <input type="date" id="date" placeholder="Date">
+        <input type="text" id="category" placeholder="Category">
+        <input type="number" id="amount" placeholder="Amount">
+        <button onclick="addExpense()">Add Expense</button>
+    </div>
+
+    <div id="view-expense" class="card">
+        <h2>View Expenses</h2>
+        <button onclick="viewExpenses()">View All</button>
+        <table id="expense-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody id="expense-list"></tbody>
+        </table>
+    </div>
+
+    <div id="summary" class="card">
+        <h2>Monthly Summary</h2>
+        <input type="month" id="month">
+        <button onclick="monthlySummary()">Show</button>
+        <p id="monthly-total"></p>
+
+        <h2>Category Summary</h2>
+        <input type="text" id="summary-category" placeholder="Category">
+        <button onclick="categorySummary()">Show</button>
+        <p id="category-total"></p>
+
+        <button onclick="exportCSV()">Export CSV</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
